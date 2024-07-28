@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mukta:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Coiny&family=Fredoka:wght@300..700&family=Fruktur:ital@0;1&family=Rakkas&family=Yatra+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    user-select: none;
+}
+
+.left_items {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.left_items:hover {
+    cursor: pointer;
+}
+
+.nav_items {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 70%;
+    font-size: 17px;
+}
+
+.logo {
+    width: 23%;
+    height: 90px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.home_selected {
+    font-weight: bold;
+}
+
+.right_items {
+    width: 15%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.condition {
+    display: flex;
+    align-items: center;
+
+}
+
+.right_items button {
+    font-family: "Mukta", sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #788151;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.right_items button:hover {
+    cursor: pointer;
+    background-color: #9daf50;
+}
+
+.search_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px
+}
+
+#search_text {
+    height: 50px;
+    width: 300px;
+    margin: 0px 22px;
+    padding: 5px;
+    outline: none;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-weight: bold;
+    font-size: 17px;
+    border: 2px solid #1890ff;
+    border-radius: 4px;
+}
+
+#search_btn {
+    height: 50px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    font-family: "Mukta", sans-serif;
+    font-size: 15px;
+    background-color: #2593fa;
+    color: white;
+}
+
+.weather_place {
+    text-align: center;
+    padding: 10px;
+    font-family: "Merriweather", serif;
+    margin-top: 15px;
+}
+
+.weather_place:hover {
+    cursor: pointer;
+}
+
+.weather_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    flex-wrap: wrap;
+}
+
+.info_items {
+    height: 70%;
+    margin: 5%;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.info_items:hover {
+    box-shadow: 0 0 11px 5px rgba(108, 108, 108, 0.2);
+}
+
+.error {
+    margin: 15px;
+    font-size: 23px;
+    font-family: "Merriweather", serif;
+    color: red;
+    display: none;
+}
+
+.weather_info_name {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Merriweather", serif;
+    background-color: #d3d3cf;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 23px;
+    padding: 10px;
+    font-family: "Merriweather", serif;
+}
+
+.more_weather_info {
+    display: flex;
+    flex-direction: column;
+    height: 137px;
+    padding: 5px;
+    /* border: 2px solid red; */
+}
+
+.more_weather_info span {
+    font-family: "Yatra One", system-ui;
+}
+
+.more_button {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-family: "Mukta", sans-serif;
+    border: 2px solid #1890ff;
+    /* margin-top: ; */
+    border-radius: 10px;
+}
+
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .nav_items {
+        display: none;
+    }
+
+    .right_items {
+        display: none;
+    }
+
+    .logo {
+        width: 77%;
+        height: 100px;
+    }
+}

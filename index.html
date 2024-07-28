@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="assests/images/kanak-high-resolution-logo.jpeg">
+</head>
+
+<body>
+    <div class="main_container">
+
+        <div class="nav_bar">
+            <div class="left_items">
+                <div class="logo">
+                    <img src="assests/images/kanak-high-resolution-logo-removebg.png" alt="">
+                </div>
+                <ul class="nav_items">
+                    <li class="home_selected">Home</li>
+                    <li>About this App</li>
+                    <li>Usage Guide</li>
+                </ul>
+              
+            </div>
+            <div class="right_items">
+                <!-- idk -->
+                <button id="signIN">Sign in</button>
+                <button id="logIN">Log in</button>
+            </div>
+                <div class="menu">
+                    <img src="assests/icons/menu.svg" alt="">
+                </div>
+        </div>
+
+        <div class="search_container">
+            <input id="search_text" type="text" placeholder="search...">
+            <button id="search_btn">Search</button>
+        </div>
+
+        <div class="error">
+            No such city, town found.<br>
+            Please enter a relevant city, town or country name.
+        </div>
+        <div class="correct">
+            <h1 class="weather_place"></h1>
+            <!-- <p id="location_detail"></p> -->
+            <div class="weather_info">
+                <div class="info_items">
+                    <div class="weather_info_name ">Temperature</div>
+                    <div class="info_temp">
+                        <div class="heading temperature"></div>
+                        <div class="more_weather_info">
+                            <span class="condition">
+                                <img class="condition_img" src="//cdn.weatherapi.com/weather/64x64/day/116.png">
+                                <span class="day_info"></span>
+                            </span>
+                            <span class="currentTemp"></span>
+                            <span class="temp_last_updated"></span>
+                        </div>
+                        <div class="more_button">Sign up for free</div>
+                    </div>
+
+                </div>
+
+                <div class="info_items">
+                    <div class="weather_info_name">Humidity</div>
+                    <div class="info_temp">
+                        <div class="heading humidity"></div>
+                        <div class="more_weather_info">
+                            <span class="dew_point"></span>
+                            <span class="heat_index"></span>
+                            <!-- <span>Max Temp is 20</span> -->
+                        </div>
+                        <div class="more_button">Sign up for free</div>
+                    </div>
+
+                </div>
+
+
+                <div class="info_items">
+                    <div class="weather_info_name">Wind</div>
+                    <div class="info_temp">
+                        <div class="heading wind"></div>
+                        <div class="more_weather_info">
+                            <span class="wind_gust"></span>
+                            <span class="wind_direction"></span>
+                            <!-- <span>Max Temp is 20</span> -->
+                        </div>
+                        <div class="more_button">Sign up for free</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
