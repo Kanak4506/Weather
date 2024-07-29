@@ -24,7 +24,8 @@ async function weatherForecast(location) {
         const weatherURL = `https://api.weatherapi.com/v1/current.json?key=81684eddc5324a0dbf345025242807&q=${location}`;
         const res = await fetch(weatherURL);
         const weather_data = await res.json();
-        weather_place.innerHTML = `Weather for ${weather_data.location.name}`
+        console.log(weather_data)
+        weather_place.innerHTML = `Weather for ${weather_data.location.name}, ${weather_data.location.region}`
         temperature_elem.innerHTML = `${weather_data.current.temp_c} <span>°C</span>`
         day_info.innerHTML = `${weather_data.current.condition.text}`
         condition_icon.src = `${weather_data.current.condition.icon}`
